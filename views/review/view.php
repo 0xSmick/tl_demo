@@ -3,6 +3,10 @@
 ?>
  
 <h1>Your Review</strong></h1>
+<p><label>Title of Company</label>:</p>
+  <?= HTML::encode($model->titleOfCompany) ?>
+  <br /><br />
+  
 <p><label>Text</label>:</p>
   <?= Html::encode($model->text) ?>
 <br /><br />
