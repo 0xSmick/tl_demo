@@ -2,15 +2,16 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-$this->title = 'About';
+$this->title = 'Why';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        This is the About page. You may modify the following file to customize its content:
-    </p>
+    <p>Because NYC cabs can <strong>suck</strong> and <strong>you</strong> should tell everyone.</p> 
+    <p>They can also be <strong>awesome</strong> so we should appreciate them when they make our lives awesome.</p>
 
-    <code><?= __FILE__ ?></code>
+    
+
+    
 </div>
