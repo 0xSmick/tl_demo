@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\userForm;
 
 class SiteController extends Controller
 {
@@ -104,4 +105,29 @@ class SiteController extends Controller
         return $this->render('say', ['target' => $target]);
 
     }
-}
+
+
+    public function actionUser()
+    {
+
+        $model = new UserForm;
+
+        if($model->load(Yii::$app->request->post()) && $model->validate()){
+
+            Yii::$app->session->setFlash('success','Thanks for signing up');
+
+        } 
+
+        return $this->render('userForm',['model'=>$model]);
+            
+
+
+        }
+
+
+
+    }
+
+
+
+
